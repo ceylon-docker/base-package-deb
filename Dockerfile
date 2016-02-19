@@ -1,7 +1,7 @@
 #
 # Base Debian image for dealing with DEB build tools and repositories
 #
-FROM base-debian-ceylon:java7
+FROM ceylon/base-debian-ceylon:java7
 
 MAINTAINER Tako Schotanus <tako@ceylon-lang.org>
 
