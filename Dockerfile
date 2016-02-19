@@ -13,7 +13,10 @@ USER root
 
 RUN apt-get -y update && apt-get install -y fakeroot debhelper rsync docbook2x sudo reprepro
 
-RUN mkdir /output && chown ceylon:ceylon /output
+RUN mkdir /output && \
+    touch /output/.novolume && \
+    chown -R ceylon:ceylon /output
+
 VOLUME /output
 
 USER ceylon
