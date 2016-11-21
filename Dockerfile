@@ -11,7 +11,7 @@ LABEL org.ceylon-lang.dockerfile.description="Base Debian image for dealing with
 
 USER root
 
-RUN apt-get -y update && apt-get install -y fakeroot debhelper rsync docbook2x sudo reprepro
+RUN apt-get -y update && apt-get install -y fakeroot debhelper devscripts vim rsync docbook2x sudo reprepro
 
 RUN mkdir /output && \
     touch /output/.novolume && \
